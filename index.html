@@ -1,130 +1,49 @@
-<!DOCTYPE html>
-<html> 
-	<head>
-		<meta charset="UTF-8">
-		<title>Page Title</title>
-		<!-- Defines the scale of the page -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- Latest compiled and minified Bootsttrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Clumsy Bird</title>
+        <link rel="apple-touch-icon-precomposed" href="data/img/touch-icon-iphone.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="data/img/touch-icon-iphone-retina.png"/>
+        <link rel="shortcut icon" href="data/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Clumsy Bird">
+        <meta charset="UTF-8" />
+        <meta name="description" content="Clumsy Bird - A Flappy Bird clone using MelonJS"/>
+        <meta name="keywords" content="flappybird, flappy, bird, game, html5, melonjs,clone"/>
+        <meta name="robots" content="index, follow">
+        <meta name="google-site-verification" content="RDZI9SqVaffd48uHfZMv67-YdvviOMe2HuULEYqVgd4" />
+        <meta property="og:image" content="http://ellisonleao.github.io/clumsy-bird/data/img/bg.png" />
+        <meta property="og:title" content="Clumsy Bird - A Flappy Bird clone using MelonJS"/>
+        <meta property="og:url" content="http://ellisonleao.github.io/clumsy-bird/"/>
+        <meta property="og:site_name" content="Clumsy Bird - MelonJS"/>
 
-		<!-- Custom styles -->
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!-- Twitter Card -->
+        <meta name="twitter:hashtag" content="clumsybird" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@ellisonleao" />
+        <meta name="twitter:creator" content="@ellisonleao" />
+        <meta name="twitter:title" content="Clumsy Bird" />
+        <meta name="twitter:description" content="A Flappy Bird melonJS clone" />
 
-		<!--jQuery library, required for botstrap -->
-		<script src="https://dynamicmedia.livenationinternational.com/Media/g/u/m/6526febc-47b6-4c6a-b1a8-a3da9e4a78d4.jpg"></script>
+        <!-- Humans -->
+        <link rel="author" href="humans.txt" />
+    </head>
 
-		<!-- Latest compiled and minified Bootstrap JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <body>
+        <!-- Canvas placeholder -->
+        <div id="screen"></div>
 
-		<!-- Defines a client-side script -->
-		<script type="text/javascript" src="js/script.js"></script>
+        <!-- melonJS Library -->
+        <script type="text/javascript" src="js/melonJS-min.js" ></script>
+        <script type="text/javascript" src="js/clumsy.js" ></script>
+        <script type="text/javascript">
+            window.onReady(function onReady() {
+                game.onload();
+            });
+        </script>
 
-		<!-- Include a google font -->
-		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,600italic,400italic,600,700' rel='stylesheet' type='text/css'>
-	</head>
-	
-	<body>
-
-		<!-- WRAP is part of the sticky footer example -->
-		<!-- found at https://getbootstrap.com/2.3.2/examples/sticky-footer-navbar.html -->
-		<div class="wrap">
-			<header>
-				<!-- Found at https://getbootstrap.com/components/#navbar -->
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-								<span>MENU</span>
-							</button>
-							<a class="navbar-brand" href="index.html">The happy Plane</a>
-						</div>
-
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="http://www.boeing.com/">boeing.com</a></li>
-								<li><a href="http://www.boeing.com/space/">Boeing in the space</a></li>
-								<li><a href="http://www.boeing.com/principles/education.page"></a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</header>
-
-			<div class="main-content">
-				<div class="container">
-
-					<!-- Bootstrap panel explained here -->
-					<!-- http://www.w3schools.com/bootstrap/bootstrap_panels.asp -->
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<a href="post-01.html">
-								<h2></h2>
-							</a>
-
-							<img class="img-responsive img-rounded" src="https://www.pedestrian.tv/wp-content/uploads/2020/09/07/photorichardnelson.jpg?quality=80&resize=1280,720">
-
-							<p>. </p>
-
-							<p>fun facts about mooses.</p>
-							
-							<blockquote>"how tall is a moose? normally a moose is 1.4 or 2.1 m.</blockquote>
-							what do they eat? leaves,buds,twigs and aquatic vegetation.
-							where do they live? they usally live in alaska.
-
-							<p>.</p>
-
-							<a href="post-01.html" class="btn btn-primary"></a>
-						</div>
-					</div>
-
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<a href="post-02.html">
-								<h2>.</h2>
-							</a>
-							
-							<img class="" src="https://animalhype.com/wp-content/uploads/2019/11/can-moose-swim.jpg" alt="Champion">
-
-							moose .</p>
-
-							<h3></h3>
-
-							<p>are mooses blind?They have very bad and they are color blind.
-							how fast can mooses swim? 56KM\h
-						.</p>
-
-							<a href="post-02.html" class="btn btn-primary"></a>
-						</div>
-					</div>
-
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<a href="post-03.html">
-								<h2>moose calling</h2>
-							</a>
-
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/_cO2UWlff4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-							<p>.</p>
-
-							<p>this is the sound that a moose makes..</p>
-	
-							<a href="post-03.html" class="btn btn-primary"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<footer class="footer">
-			<div class="container">
-				<p class="text-muted">Contact: please write to <a href="mailto:example@mail.com">example@mail.com</a>.</p>
-			</div>
-		</footer>
-
-	</body>
+    </body>
 </html>
